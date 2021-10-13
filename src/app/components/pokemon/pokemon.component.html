@@ -1,0 +1,16 @@
+<div class="card pokemon-card" style="width: 18rem;">
+  <img class="card-img-top pokemon-card--image" [src]="imageSrc" [alt]="name" draggable="false">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <div class="card-text">
+      <div class="d-flex flex-row justify-content-between">
+        <span>{{height/10}} m. </span>
+        <span>{{weight/10}} kg. </span>
+      </div>
+      <span class="badge rounded-pill bg-light text-dark pokemon-type pokemon-type--{{type}}" *ngFor="let type of types">{{type}}</span>
+    </div>
+  </div>
+  <div class="card-footer text-muted d-flex" *ngIf="!hideCTA">
+    <button type="button" class="btn btn-light flex-grow-1" (click)="findOutMore()">Find out more</button>
+  </div>
+</div>

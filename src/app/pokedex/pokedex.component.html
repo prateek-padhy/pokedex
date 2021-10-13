@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<app-pokeform [sortBy]="sort$ | async" [resultsPerPage]="limit$ | async" (sortChange)="onSortChange($event)" (limitChange)="onLimitChange($event)" (searchKeyChange)="onSearchKeyChange($event)"></app-pokeform>
+
+<div class="container">
+
+    <div class="d-flex justify-content-between m-3">
+        <button type="button" class="btn btn-secondary btn-lg" (click)="previous()" [disabled]="disablePrevious$ | async">Previous</button>
+        <button type="button" class="btn btn-secondary btn-lg" (click)="next()"  [disabled]="disableNext$ | async">Next</button>
+    </div>
+
+    <app-pokelist [pokemons]="pokemons$ | async" [key]="searchKey" [sortBy]="sort$ | async"></app-pokelist>
+
+    <div class="d-flex justify-content-between m-3">
+        <button type="button" class="btn btn-secondary btn-lg" (click)="previous()"  [disabled]="disablePrevious$ | async">Previous</button>
+        <button type="button" class="btn btn-secondary btn-lg" (click)="next()" [disabled]="disableNext$ | async">Next</button>
+    </div>
+</div>
+
+<app-footer></app-footer>

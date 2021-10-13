@@ -1,0 +1,26 @@
+<form class="poke-form">
+    <div class="container d-flex flex-column flex-md-row ">
+        <div class="input-group d-flex">
+            <span class="input-group-text" id="search">Search</span>
+            <input type="text" class="form-control form-control-lg search" placeholder="search..." aria-label="search" aria-describedby="search" name="search" (input)="onSearchKeyChange()" [(ngModel)]="searchKey">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text" id="sort">Sort by</span>
+            <select class="form-select form-select-lg" aria-label="sort" aria-describedby="sort" name="sort" (change)="onSortChange()" [(ngModel)]="sortBy">
+                <option value="name">Name</option>
+                <option value="height">Height</option>
+                <option value="weight">Weight</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text" id="limit">Results per page</span>
+            <select class="form-select form-select-lg" aria-label="limit" aria-describedby="limit" name="limit" (change)="onLimitChange()" [(ngModel)]="resultsPerPage">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+        </div>
+    </div>
+</form>

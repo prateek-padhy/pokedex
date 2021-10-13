@@ -1,0 +1,17 @@
+<div class="container pokemon-details d-flex flex-column align-items-center">
+    <div class="" *ngIf="pokemon">
+        <app-pokemon 
+            [id]="pokemon.id"
+            [name]="pokemon.name" 
+            [height]="pokemon.height"
+            [weight]="pokemon.weight"
+            [types]="[pokemon.types[0].type.name, pokemon.types[1]?.type.name]" 
+            [imageSrc]="pokemon.sprites.other['official-artwork'].front_default"
+            [hideCTA]="true"
+        ></app-pokemon>
+    </div>
+
+    <div class="pt-2">
+        <button class="btn btn-secondary btn-lg" (click)="backToPokedex()">Back</button>
+    </div>
+</div>

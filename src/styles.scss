@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$grass: rgb(0, 201, 0);
+$fire: rgb(231, 0, 0);
+$water: rgb(0, 248, 248);
+$electric: rgb(251, 255, 0);
+$normal: rgb(179, 179, 179);
+$ice: rgb(0, 140, 255);
+$fighting: rgb(167, 57, 57);
+$poison: rgb(233, 70, 233);
+$ground: rgb(255, 166, 0);
+$flying: rgb(107, 200, 231);
+$psychic: rgb(248, 107, 201);
+$bug: rgb(143, 182, 2);
+$rock: rgb(250, 210, 135);
+$ghost: rgb(143, 77, 218);
+$dragon: rgb(180, 130, 238);
+$dark: rgb(97, 97, 97);
+$steel: rgb(175, 174, 174);
+$fairy: rgb(248, 190, 199);
+
+
+
+.pokemon-type {
+    margin: 0.2rem;
+    padding: 0.5rem;
+
+    &--grass{
+        background-color: $grass !important;
+    }
+    &--fire{
+        background-color: $fire !important;
+    }
+    &--water{
+        background-color: $water !important;
+    }
+    &--electric{
+        background-color: $electric !important;
+    }
+    &--normal{
+        background-color: $normal !important;
+    }
+    &--ice{
+        background-color: $ice !important;
+    }
+    &--fighting{
+        background-color: $fighting !important;
+    }
+    &--poison{
+        background-color: $poison !important;
+    }
+    &--ground{
+        background-color: $ground !important;
+    }
+    &--flying{
+        background-color: $flying !important;
+    }
+    &--psychic{
+        background-color: $psychic !important;
+    }
+    &--psychic{
+        background-color: $psychic !important;
+    }
+    &--bug{
+        background-color: $bug !important;
+    }
+    &--rock{
+        background-color: $rock !important;
+    }
+    &--ghost{
+        background-color: $ghost !important;
+    }
+    &--dragon{
+        background-color: $dragon !important;
+    }
+    &--steel{
+        background-color: $steel !important;
+    }
+    &--fairy{
+        background-color: $fairy !important;
+    }
+    &--dark{
+        background-color: $dark !important;
+    }
+}
