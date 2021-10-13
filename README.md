@@ -1,6 +1,10 @@
 # Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## About
+
+This is a Web-based Pokédex in which you can see the list of Pokémons and sort them by Name, Height, or Weight. On click of the 'Find out more' button, you will take to a detail page. 
+
+This project was create with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7, [NgRx](https://ngrx.io/) and [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/). With the help from [PokéAPI](https://pokeapi.co/)
 
 ## Development server
 
